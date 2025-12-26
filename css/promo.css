@@ -1,0 +1,79 @@
+.promo-wrapper {
+  width: 100vw;
+  display: flex;
+}
+
+
+.discount-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.discount-title h2 {
+  font-size: clamp(32px, 8vw, 97px);
+  font-family: 'Mulish-SemiBold', sans-serif;
+  text-transform: uppercase;
+  color: var(--own-dark-red);
+}
+.discount-title {
+  height: 50%;
+  background-color: var(--own-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discount-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  background-color: var(--own-red);
+}
+.discount-number h2 {
+  color: var(--own-white);
+  font-family: 'Mulish-Regular', sans-serif;
+  font-size: clamp(59px, 10vw, 182px);
+}
+
+
+.tree-section {
+  width: 50%;
+  display: flex;  
+  height: 100%;
+  background-color: var(--own-dark-red);
+  transition: background-color 0.2s ease-in;
+}
+.tree-section:hover {
+  background-color: var(--own-red);
+}
+.tree-section:hover .tree-hover {
+  opacity: 1;
+}
+.tree-titles { 
+  height: 100%;
+}
+.gift {
+  position: relative;
+}
+.gift-hover {
+  position: absolute;
+  inset: 0;
+}
+.tree-img {
+  width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.tree-img img {
+
+}
+.tree-hover {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Metamorphous-Regular";
+    src: url(../fonts/Metamorphous-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Mulish-Bold";
+    src: url(../fonts/Mulish-Bold.ttf) format("truetype");
+    font-style: bold;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Mulish-Medium";
+    src: url(../fonts/Mulish-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Mulish-Regular";
+    src: url(../fonts/Mulish-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Mulish-SemiBold";
+    src: url(../fonts/Mulish-SemiBold.ttf) format("truetype");
+    font-style: bold;
+    font-weight: 600;
+}
+

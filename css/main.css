@@ -1,0 +1,17 @@
+:root {
+    --own-white: #FCF6EB;
+    --own-red: #E73F40;
+    --own-dark-red: #602930;
+}
+
+* {
+    box-sizing: border-box;
+    cursor: url("../img/cursor.svg") 16 16, auto;
+}
+
+html,
+body {
+    width: 100vw;
+    max-width: 100%;
+}
+

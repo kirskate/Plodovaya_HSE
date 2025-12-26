@@ -1,0 +1,190 @@
+.hero-wrapper {
+  width: 100vw;
+}
+
+
+.hero-header {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--own-red);
+}
+.hero-header-title {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(9px, 2vw, 28px);
+  padding: 7% 0;
+}
+.hero-header-title img {
+  width: clamp(200px, 60%, 618px);
+  z-index: 15;
+}
+.hero-header-title h1 {
+  font-size: clamp(15px, 4vw, 46px);
+  color: var(--own-white);
+  text-align: center;
+  font-family: "Metamorphous-Regular", sans-serif;
+  z-index: 10;
+}
+
+
+.hero-features {
+  display: flex;
+  width: 100vw;
+  background-color: var(--own-red);
+}
+.hero-feature {
+  position: relative;
+  width: 50%;
+}
+.hero-feature img {
+  width: 100%;
+  height: 100%;
+}
+.gnome-1 {
+  animation: blink 1s steps(2, start) infinite;
+  position: absolute;
+  inset: 0;
+}
+.ice-1 {
+  position: absolute;
+  inset: 0;
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+  0% {visibility: visible;}
+  100% {visibility: hidden;}
+}
+
+
+
+.header-fruits {
+  position: absolute;
+
+}
+.cherry-1 {
+  width: 12%;
+  left: 3%;
+  top: 5%;
+  z-index: 5;
+  animation: cherry-rotate 5s linear infinite;
+}
+.cherry-2 {
+  width: 14%;
+  right: 3%;
+  bottom: 10%;
+  z-index: 5;
+  animation: cherry-rotate 5s linear infinite;
+}
+.ball-1 {
+  width: 17%;
+  left: -10%;
+  bottom: -20%;
+  animation: moveBall1 6s linear infinite;
+}
+.ball-2 {
+  width: 17%;
+  right: -10%;
+  top: -20%;
+  animation: moveBall2 6s linear infinite;
+}
+.apple {
+  width: 6%;
+  left: 20%;
+  bottom: 10%;
+  z-index: 5;
+  animation: cherry-rotate 5s linear infinite;
+}
+.durian {
+  width: 6%;
+  right: 15%;
+  top: 10%;
+  z-index: 5;
+  animation: cherry-rotate 5s linear infinite;
+}
+@keyframes cherry-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveBall1 {
+  0% {
+    left: -10%;
+    bottom: -20%;
+  }
+  25% {
+    left: -2%;
+    bottom: 80%;
+  }
+  50% {
+    left: 3%;
+    bottom: -10%;
+  }
+  75% {
+    left: 8%;
+    bottom: 80%;
+  }
+  100% {
+    left: -10%;
+    bottom: -20%;
+  }
+}
+@keyframes moveBall2 {
+  0% {
+    right: -10%;
+    top: -20%;
+  }
+  25% {
+    right: -2%;
+    top: 80%;
+  }
+  50% {
+    right: 3%;
+    top: -10%;
+  }
+  75% {
+    right: 8%;
+    top: 80%;
+  }
+  100% {
+    right: -10%;
+    top: -20%;
+  }
+}
+
+
+.hero-marquee {
+  background-color: var(--own-red);
+  height: clamp(32px, 8vw ,82px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee-right 15s linear infinite;
+}
+.hero-marquee p {
+  font-family: 'Mulish-Bold',sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: clamp(13px, 3.5vw, 36px);
+  color: var(--own-white);
+}
+@keyframes marquee-right {
+  from {
+    transform: translateX(-65%);
+  }
+  to {
+    transform: translateX(-12%); /* ПОДОБРАТЬ % */
+  }
+}
