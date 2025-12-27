@@ -1,0 +1,32 @@
+@media (max-width:420px) {
+  .hero-features {
+    flex-direction: column;
+  }
+  .hero-feature {
+    width: 100%;
+  }
+  .promo-wrapper {
+    flex-direction: column;
+  }
+  .discount-section {
+    width: 100%;
+  }
+  .tree-section {
+    width: 100vw;
+  }
+  .final-section {
+    flex-direction: column;
+  }
+  .final-section-1 {
+    width: 100vw;
+  }
+  .final-section-2 img {
+    width: 50vw;
+  }
+  .final-section-3 img {
+    width: 50vw;
+  }
+  .gg {
+    width: 100vw;
+  }
+}

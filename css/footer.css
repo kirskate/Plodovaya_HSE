@@ -1,0 +1,27 @@
+.footer-marquee {
+  background-color: var(--own-white);
+  height: clamp(32px, 8vw ,82px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee-right 15s linear infinite;
+}
+.footer-marquee p {
+  font-family: 'Mulish-Bold',sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: clamp(13px, 3.5vw, 36px);
+  color: var(--own-red);
+}
+@keyframes marquee-right {
+  from {
+    transform: translateX(-65%);
+  }
+  to {
+    transform: translateX(-12%); /* ПОДОБРАТЬ % */
+  }
+}

@@ -1,0 +1,42 @@
+.vegetables {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  background-color: var(--own-white);
+
+}
+
+.vegetables > div {
+  position: relative;
+  height: clamp(132px, 10vw, 406px); /* адаптивная ширина */
+  aspect-ratio: 1 / 1; /* сохраняем пропорции квадрата */
+  overflow: hidden;
+}
+
+/* Расположение блоков: чередуем вверх/вниз */
+.vegetables > div:nth-child(odd) {
+  transform: translateY(-30%);
+}
+
+.vegetables > div:nth-child(even) {
+  transform: translateY(40%);
+}
+
+
+
+.vegetables img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.veg-hover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.vegetables > div:hover .veg-hover {
+  opacity: 1;
+}

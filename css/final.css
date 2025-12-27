@@ -1,0 +1,48 @@
+.final-section {
+  width: 100vw;
+  display: flex;
+}
+
+.final-section-1 {
+  width: 50vw;
+  background-color: var(--own-dark-red);
+}
+.gg {
+  display: flex;
+  width: 50vw;
+}
+.final-section-2 {
+  width: 50%;
+  position: relative;
+  background-color: var(--own-red);
+}
+.final-section-2 img {
+  width: 100%;
+}
+.final-2-img-hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.final-section-2:hover .final-2-img-hover {
+  opacity: 1;
+}
+.final-section-3 {
+  width: 50%;
+  position: relative;
+  background-color: #AA9951;
+}
+.final-section-3 img {
+  width: 100%;
+}
+.final-section-3:hover .final-3-img-hover {
+  opacity: 1;
+}
+.final-3-img-hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
